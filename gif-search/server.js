@@ -4,8 +4,7 @@ const express = require('express');
 // App Setup
 const app = express();
 
-// Somewhere near the top
-app.use(express.static('public'));
+app.use(express.static('public')); //tell your Express app that your static files will live in the public folder
 
 // Require tenorjs near the top of the file
 const Tenor = require("tenorjs").client({
